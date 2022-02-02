@@ -1,37 +1,42 @@
 {
-  "name": "webdev",
+  "name": "webpack",
   "version": "1.0.0",
-  "description": "a template for web apps",
-  "main": "gulpfile.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "hint": "^6.1.4",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.19.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.1.0"
-  },
+  "description": "",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "serve": "webpack serve",
+    "build": "webpack",
+    "jlint": "npx eslint .",
+    "fjlint": "npx eslint --fix .",
+    "hint": "npx hint --telemetry=off .",
+    "fhint": "npx hint --fix --telemetry=off .",
+    "stylelint": "npx stylelint '**/*.{css,scss}'",
+    "fstylelint": "npx stylelint --fix '**/*.{css,scss}'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrRamoun/WEBDEV.git"
+    "url": "git+https://github.com/MrRamoun/WEBPACK.git"
   },
-  "author": "Ramoun",
-  "license": "MIT",
+  "author": "MrRamoun",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MrRamoun/WEBDEV/issues"
+    "url": "https://github.com/MrRamoun/WEBPACK/issues"
   },
-  "homepage": "https://github.com/MrRamoun/WEBDEV#readme"
+  "homepage": "https://github.com/MrRamoun/WEBPACK#readme",
+  "devDependencies": {
+    "css-loader": "^6.3.0",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "package-lock.json": "^1.0.0",
+    "package.json": "^2.0.1"
+  }
 }
