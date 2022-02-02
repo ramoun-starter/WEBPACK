@@ -8,7 +8,13 @@
     "watch": "webpack --watch",
     "start": "webpack serve --open",
     "serve": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "jlint": "npx eslint .",
+    "fjlint": "npx eslint --fix .",
+    "hint": "npx hint --telemetry=off .",
+    "fhint": "npx hint --fix --telemetry=off .",
+    "stylelint": "npx stylelint '**/*.{css,scss}'",
+    "fstylelint": "npx stylelint --fix '**/*.{css,scss}'"
   },
   "repository": {
     "type": "git",
